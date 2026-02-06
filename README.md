@@ -59,7 +59,7 @@ cmp file1 file2
 comm file1 file2
  ## OUTPUT
 
- 
+ <img width="778" height="252" alt="image" src="https://github.com/user-attachments/assets/b276ba46-bcaf-4934-9e93-9ac20c64d5cb" />
 
 diff file1 file2
 ## OUTPUT
@@ -141,6 +141,7 @@ grep -R ubuntu /etc
 grep -w -n world newfile   
 ## OUTPUT
 
+<img width="837" height="86" alt="image" src="https://github.com/user-attachments/assets/23ab6a88-4640-4486-a78c-564ec168e80a" />
 
 cat < newfile 
 ```
@@ -164,46 +165,43 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-
+<img width="917" height="85" alt="image" src="https://github.com/user-attachments/assets/e56ffc10-60db-4043-930c-526186581e17" />
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+<img width="933" height="77" alt="image" src="https://github.com/user-attachments/assets/f9bd1c2a-4094-416d-b548-ba1e4265122d" />
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
+<img width="1046" height="92" alt="image" src="https://github.com/user-attachments/assets/d69efa96-2353-44a6-87ae-c61bb2b5524f" />
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+<img width="697" height="96" alt="image" src="https://github.com/user-attachments/assets/dbe99154-1d0d-4ce5-be5b-faaa978f9846" />
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
-
-egrep '(World$)' newfile 
-## OUTPUT
-
+<img width="918" height="92" alt="image" src="https://github.com/user-attachments/assets/ea813005-c788-4111-9539-219c03ed293c" />
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+<img width="912" height="118" alt="image" src="https://github.com/user-attachments/assets/47e7490f-6e7d-4872-9b45-85521f358915" />
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
 
-
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+<img width="950" height="57" alt="image" src="https://github.com/user-attachments/assets/c1b99279-19fb-4f97-bbfa-a97ec588b663" />
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
