@@ -54,11 +54,12 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
 
+<img width="675" height="55" alt="image" src="https://github.com/user-attachments/assets/ff2dc779-5e1c-49b8-a2f9-cc4b5ac0d1ad" />
 
 comm file1 file2
  ## OUTPUT
+
  
-<img width="671" height="166" alt="image" src="https://github.com/user-attachments/assets/198264df-6d62-426b-bb72-77dd4c9cfdd2" />
 
 diff file1 file2
 ## OUTPUT
@@ -82,8 +83,6 @@ cat > file22
 1003 | Joe |  7000 | Developer
 ^d
 ```
-
-
 cut -c1-3 file11
 ## OUTPUT
 
@@ -112,35 +111,32 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+<img width="616" height="47" alt="image" src="https://github.com/user-attachments/assets/4cb119a1-1b19-4f02-bcff-b5a9def70a6d" />
 
 grep hello newfile 
 ## OUTPUT
 
-
-
+<img width="517" height="65" alt="image" src="https://github.com/user-attachments/assets/4d14f6e1-3989-4c65-a83f-c9585c7de5b1" />
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+<img width="628" height="47" alt="image" src="https://github.com/user-attachments/assets/58b1a259-3038-415a-b2d0-a9f10e01a64b" />
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
-
+<img width="786" height="75" alt="Screenshot 2026-02-06 092031" src="https://github.com/user-attachments/assets/720637ea-00cc-4c3d-9ebd-1cd9c80ee5c2" />
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
-
+<img width="812" height="50" alt="image" src="https://github.com/user-attachments/assets/a965af0c-3f71-48ab-8f24-616b0bfd27a0" />
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+<img width="1340" height="730" alt="image" src="https://github.com/user-attachments/assets/b6107189-2bb5-4ed2-acdf-d851271847eb" />
 
 grep -w -n world newfile   
 ## OUTPUT
