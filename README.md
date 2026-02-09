@@ -687,7 +687,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- ##Output
+## Output
 
  <img width="902" height="342" alt="image" src="https://github.com/user-attachments/assets/076eb46c-3ae0-4ca0-9849-1879638501f7" />
 
@@ -717,7 +717,7 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
-##Output
+## Output
 
 <img width="917" height="233" alt="image" src="https://github.com/user-attachments/assets/739a237e-6886-4520-9f25-c4e2fdc8ce85" />
  
@@ -732,16 +732,12 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+## Output
+
+<img width="907" height="227" alt="image" src="https://github.com/user-attachments/assets/1d81a4ba-0117-417f-9d04-930f9271b694" />
  
 cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
+```cat forin2.sh 
  ```
  
 $ chmod 755 forin2.sh
@@ -757,8 +753,11 @@ done
 ```
 $ chmod 755 forin2.sh
  
-$ ./forin2.sh 
- 
+$ ./forin2.sh
+## Output
+
+<img width="845" height="227" alt="image" src="https://github.com/user-attachments/assets/dc6d05d4-09a7-4c3f-a40f-3b25b10d9545" />
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -769,7 +768,10 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+## Output
+
+<img width="877" height="210" alt="image" src="https://github.com/user-attachments/assets/4090a57e-9176-4ebc-8694-c146184035df" />
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -804,6 +806,7 @@ Khammam
 
 ## OUTPUT
 
+<img width="712" height="185" alt="image" src="https://github.com/user-attachments/assets/9285d898-8a0c-4a21-bd05-d6a218fc82dd" />
 
 cat forctype.sh 
 ```bash
@@ -818,6 +821,8 @@ $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
 
+<img width="922" height="232" alt="image" src="https://github.com/user-attachments/assets/8a2441fb-623a-457e-b0ff-1b5f2ae2265e" />
+
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -831,24 +836,7 @@ $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
 
-cat fornested1.sh 
-```bash
-#!/bin/bash
-# nesting for loops
-for (( a = 1; a <= 3; a++ ))
-do
-echo "Starting loop $a:"
-for (( b = 1; b <= 3; b++ ))
-do
-echo " Inside loop: $b"
-done
-done
-```
-$ chmod 755 fornested1.sh
- 
-$ ./fornested1.sh 
- ## OUTPUT
-
+<img width="863" height="235" alt="image" src="https://github.com/user-attachments/assets/58ca8a24-05d0-4690-b2f7-92349d5c0946" />
  
 cat forbreak.sh 
 ```bash
@@ -868,8 +856,10 @@ echo "The for loop is completed“
 
 $ chmod 755 forbreak.sh
  
-$ ./forbreak.sh 
- 
+$ ./forbreak.sh
+
+<img width="922" height="348" alt="image" src="https://github.com/user-attachments/assets/086620b5-ceb2-4ebe-8540-148b5f88e706" />
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -884,13 +874,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-
- 
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+
+<img width="877" height="326" alt="image" src="https://github.com/user-attachments/assets/efa49de1-8b08-4f90-b2f7-6f3a2b2ccf33" />
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -905,6 +895,7 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+<img width="900" height="203" alt="image" src="https://github.com/user-attachments/assets/f9cbc232-15b5-4a70-8646-cc6a4d65427e" />
 
  cat exread1.sh
 ```bash
@@ -914,12 +905,11 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh
 ## OUTPUT
 
+<img width="937" height="211" alt="image" src="https://github.com/user-attachments/assets/3bff7968-c875-48a4-956c-11ff4321190c" />
 
-
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -938,11 +928,9 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
  
- ./funcex.sh 1 2
+<img width="867" height="347" alt="image" src="https://github.com/user-attachments/assets/991921c6-7161-447b-8df9-151a3075826c" />
 
- 
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -955,7 +943,9 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+
+ <img width="872" height="178" alt="image" src="https://github.com/user-attachments/assets/100ca088-0d85-4402-a975-8efd1a3c709f" />
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -972,20 +962,8 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
-cat argshift.sh
-```bash
-#!/bin/bash 
-set -x 
-while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-set +x
-```
-## OUTPUT
- ./argshift.sh 1 2 3
- 
+
+ <img width="916" height="327" alt="image" src="https://github.com/user-attachments/assets/400d161a-ff74-4689-aa0f-9846b60ad99b" />
  
 cat > nc.awk
 ```bash
@@ -1016,7 +994,9 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+
+ <img width="861" height="345" alt="image" src="https://github.com/user-attachments/assets/a45e76d2-10b0-478a-8d63-a361f5b29a90" />
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1044,6 +1024,7 @@ fi
 ```
 ## OUTPUT 
 
+<img width="366" height="40" alt="image" src="https://github.com/user-attachments/assets/360f95ee-f26c-4a79-9385-d790a3b7d167" />
 
 # RESULT:
 The Commands are executed successfully.
